@@ -3,10 +3,10 @@ import React from "react"
 
 const Hero = () => {
     return (
-        <div className="relative w-full f-f-p ">
+        <div className="relative w-full h-[105vh] f-f-p ">
             <img className="w-full h-full" src="./assets/h1.png" alt="hero" />
             <div className="absolute inset-0 w-full">
-                <div className="container mx-auto lg:px-32 flex justify-between font-medium text-[15px] leading-10">
+                <div className="container mx-auto px-14 lg:px-20 flex justify-between font-medium text-[15px] leading-10">
                     <div className="flex justify-center items-center space-x-5">
                         <a role={"button"} href="/">Shop</a>
                         <a role={"button"} href="/">Subscribe &amp; Save</a>
@@ -39,7 +39,7 @@ const Hero = () => {
             <div className="absolute inset-0 w-full h-full">
                 <div className="h-full space-y-2 py-10 md:py-16 lg:py-28 container mx-auto">
                     <div className="relative flex h-full">
-                        <div className="flex flex-col space-y-3 absolute bottom-0">
+                        <div className="flex flex-col space-y-3 absolute bottom-5">
                             <p className="text-[40px] leading-10 font-bold f-f-p">
                                 Strength in <br />
                                 Every Can.
