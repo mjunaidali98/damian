@@ -1,8 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,93 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.f-f-p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.f-i-p {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.f-f-v{
+  font-family: 'Volkhov', serif;
+}
+
+.section {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.top {
+  height: 0;
+  background-color: #ecf5f9;
+}
+
+.top1 {
+  height: 0;
+}
+
+.bottom {
+  height: 0;
+  border-width: 0 100vW 5.3vW 0;
+  border-style: solid;
+  border-color: #ECF5F9 transparent #ECF5F9 transparent;
+}
+
+
+.blue-bg {
+  background: linear-gradient(180deg, #ECF5F9 36.36%, #ECF5F9 100%);
+}
+.light-blue-bg{
+  background-color: #ecf5f9;
+
+}
+
+.main-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  transform: rotate(180deg);
+  z-index: 0;
+  background: #ECF5F9;
+}
+
+.main-wrapper::before {
+  content: "";
+  height: 285px;
+  width: 100vW;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ECF5F9;
+  z-index: 1;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  z-index: 10;
+  background: #ECF5F9;
+}
+
+.degrade {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(342.75deg,#FFFFFF -10.68%,rgba(255,255,255,.1) 96.29%);
+}
+
+.diagonal-wrapper {
+  height: calc(285px + 5.3vW);
+  bottom: 0;
+  position: absolute;
 }
