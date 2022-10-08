@@ -4,7 +4,9 @@ import Hero from "../components/hero"
 import Notification from "../components/notification"
 import Press from "../components/press"
 import AnimatedHeading from "../components/animatedHeading"
-import Products from "../components/products"
+import Products from "../components/products";
+import Testimonials from "../components/testimonials";
+
 const Home = () => {
     return (
         <React.Fragment>
@@ -14,6 +16,7 @@ const Home = () => {
             <Press />
             <AnimatedHeading />
             <Products />
+            <Testimonials/>
         </React.Fragment>
     )
 }
