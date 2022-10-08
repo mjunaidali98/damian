@@ -22,7 +22,8 @@ code {
 .f-i-p {
   font-family: 'IBM Plex Sans', sans-serif;
 }
-.f-f-v{
+
+.f-f-v {
   font-family: 'Volkhov', serif;
 }
 
@@ -55,7 +56,8 @@ code {
 .blue-bg {
   background: linear-gradient(180deg, #ECF5F9 36.36%, #ECF5F9 100%);
 }
-.light-blue-bg{
+
+.light-blue-bg {
   background-color: #ecf5f9;
 
 }
@@ -95,11 +97,109 @@ code {
   position: relative;
   height: 100%;
   width: 100%;
-  background: linear-gradient(342.75deg,#FFFFFF -10.68%,rgba(255,255,255,.1) 96.29%);
+  background: linear-gradient(342.75deg, #FFFFFF -10.68%, rgba(255, 255, 255, .1) 96.29%);
 }
 
 .diagonal-wrapper {
   height: calc(285px + 5.3vW);
   bottom: 0;
   position: absolute;
+}
+
+
+
+@-webkit-keyframes slideOutDown {
+
+  /* from {
+    top: -200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    top: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  } */
+  0% {
+    top: -100px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  90% {
+    top: 12px;
+    -webkit-transform: translate3d(0, 102%, 0);
+    transform: translate3d(0, 102%, 0);
+  }
+
+  100% {
+    top: 0px;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+
+  /* from {
+    top: -200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    top: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  } */
+  0% {
+    top: -100px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  90% {
+    top: 12px;
+    -webkit-transform: translate3d(0, 102%, 0);
+    transform: translate3d(0, 102%, 0);
+  }
+
+  100% {
+    top: 0px;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+}
+
+#button {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+button[class^="slide"]::after {
+  transition: all 0.35s;
+  background: white;
+}
+
+button[class^="slide"]:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+
+button.slide_from_left::after {
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
 }
