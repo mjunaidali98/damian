@@ -20,7 +20,7 @@ const AnimatedHeading = () => {
     })
 
     return (
-        <div className='w-full my-11'>
+        <div className='w-full py-11 bg-white'>
             <h1 className='text-black w-full text-[40px] font-extrabold f-f-p text-center'>
                 <span>For Your </span>
                 <span className='w-[387px] inline-block relative text-[#767C82] align-top text-left overflow-hidden'>

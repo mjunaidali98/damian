@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Cans from "../components/cans"
 import Hero from "../components/hero"
 import Notification from "../components/notification"
@@ -10,8 +10,9 @@ import Gallery from "../components/gallery"
 import Footer from "../components/footer"
 
 const Home = () => {
+    const [image, setImage] = useState(null);
     return (
-        <React.Fragment>
+        <div className="relative w-full h-full">
             <Notification />
             <Hero />
             <Cans />
@@ -20,8 +21,8 @@ const Home = () => {
             <Products />
             <Testimonials />
             <Gallery />
-            <Footer/>
-        </React.Fragment>
+            <Footer />
+        </div>
     )
 }
 

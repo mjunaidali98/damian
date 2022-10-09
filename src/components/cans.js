@@ -54,10 +54,8 @@ const Cans = () => {
                         })
                     }
                 </div>
-
             </div>
-
-            <div className="relative light-blue-bg py-40 z-10 px-5 lg:px-10 ">
+            <div className="relative light-blue-bg py-20 z-10 px-5 lg:px-10 ">
                 <div class="main-wrapper ">
                     <div className="degrade">
                         <div className="diagonal-wrapper ">

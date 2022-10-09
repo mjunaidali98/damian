@@ -85,7 +85,7 @@ const Press = () => {
     }
     ]
     return (
-        <div className='py-16'>
+            <div className='py-16 bg-white'>
             <p className="f-i-p text-base text-[#767C82] font-semibold uppercase text-center">Press</p>
             <div className='py-5 '>
                 <Swiper

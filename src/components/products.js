@@ -24,29 +24,30 @@ const Products = () => {
         }
     ]
     return (
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-11'>
-            {items.map((item) => {
-                return (
-                    <div className='relative w-full h-full'>
-                        <div className='w-full h-full flex-1'>
-                            <div style={{ backgroundColor: item.color }} className={`pb-[138%] relative overflow-hidden group cursor-pointer z-10`}>
-                                <div className='absolute inset-0 w-full h-full' >
-                                    <img className='absolute -top-[8%] left-4 scale-[2] z-0 group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 object-cover object-center' src={item.bg_image} />
-                                    <img className='absolute z-10 group-hover:z-0 opacity-100 group-hover:opacity-0 transition-all ease-in-out duration-300 object-cover w-full' src={item.front_image} alt="Slate Milk presentation" />
+        <div className="bg-white">
+            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-11'>
+                {items.map((item) => {
+                    return (
+                        <div className='relative w-full h-full group'>
+                            <div className='w-full h-full flex-1'>
+                                <div style={{ backgroundColor: item.color }} className={`pb-[138%] relative overflow-hidden cursor-pointer z-10`}>
+                                    <div className='absolute inset-0 w-full h-full' >
+                                        <img className='absolute -top-[8%] left-4 scale-[2] z-0 group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 object-cover object-center' src={item.bg_image} />
+                                        <img className='absolute z-10 group-hover:z-0 opacity-100 group-hover:opacity-0 transition-all ease-in-out duration-300 object-cover w-full' src={item.front_image} alt="Slate Milk presentation" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='absolute bottom-[30px] left-0 right-0 w-full z-10 '>
+                                <div className='flex w-full items-center justify-center'>
+                                    <a id='button' className=" relative px-4 py-2 rounded-lg font-lg font-bold text-center w-[220px] text-black border-2 border-white " href="https://slatemilk.com/products/chocolate-milk-trellis?variant=39320513970270" >
+                                        SHOP NOW
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className='absolute bottom-[30px] left-0 right-0 w-full z-10 '>
-                            <div className='flex w-full items-center justify-center'>
-                                <a id='button' className=" relative px-4 py-2 rounded-lg font-lg font-bold text-center w-[220px] text-black border-2 border-white " href="https://slatemilk.com/products/chocolate-milk-trellis?variant=39320513970270" >
-                                    SHOP NOW
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                )
-            })}
-
+                    )
+                })}
+            </div>
         </div>
     )
 }
