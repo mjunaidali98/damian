@@ -6,6 +6,8 @@ import Press from "../components/press"
 import AnimatedHeading from "../components/animatedHeading"
 import Products from "../components/products";
 import Testimonials from "../components/testimonials";
+import Gallery from "../components/gallery"
+import Footer from "../components/footer"
 
 const Home = () => {
     return (
@@ -16,7 +18,9 @@ const Home = () => {
             <Press />
             <AnimatedHeading />
             <Products />
-            <Testimonials/>
+            <Testimonials />
+            <Gallery />
+            <Footer/>
         </React.Fragment>
     )
 }

@@ -24,7 +24,7 @@ const Products = () => {
         }
     ]
     return (
-        <div className='w-full grid grid-cols-4'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-11'>
             {items.map((item) => {
                 return (
                     <div className='relative w-full h-full'>
@@ -32,7 +32,7 @@ const Products = () => {
                             <div style={{ backgroundColor: item.color }} className={`pb-[138%] relative overflow-hidden group cursor-pointer z-10`}>
                                 <div className='absolute inset-0 w-full h-full' >
                                     <img className='absolute -top-[8%] left-4 scale-[2] z-0 group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 object-cover object-center' src={item.bg_image} />
-                                    <img className='absolute z-10 group-hover:z-0 opacity-100 group-hover:opacity-0 transition-all ease-in-out duration-300 object-cover object-center ' src={item.front_image} alt="Slate Milk presentation" />
+                                    <img className='absolute z-10 group-hover:z-0 opacity-100 group-hover:opacity-0 transition-all ease-in-out duration-300 object-cover w-full' src={item.front_image} alt="Slate Milk presentation" />
                                 </div>
                             </div>
                         </div>

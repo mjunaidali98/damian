@@ -97,54 +97,58 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div className='py-16'>
-            <p className="f-i-p text-base text-[#767C82] font-semibold uppercase text-center">Testimonials</p>
-            <div className='py-5'>
+        <div className='py-16 bg-white'>
+            <p className="f-i-p text-base text-[#767C82] font-semibold uppercase text-center py-10">Testimonials</p>
+            <div className='py-10 px-10 relative'>
+                <div className='absolute top-0 bottom-0 left-0'>
+                    <div className='flex w-full h-full justify-center items-center relative z-10'>
+                        <button ref={navigationPrevRef} role={"button"} className='prev appearance-none focus:outline-none h-10 w-10 bg-white shadow-xl drop-shadow-lg flex items-center justify-center'>
+                            <svg className='' width="14" height="14" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.8 0L4.5 0.7L1.9 3.5H11V4.5H1.8L4.5 7.3L3.8 8L0 4L3.8 0Z" fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div className='absolute top-0 bottom-0 right-0'>
+                    <div className='flex w-full h-full justify-center items-center relative z-10'>
+                        <button ref={navigationNextRef} role={"button"} className='next appearance-none focus:outline-none h-10 w-10 bg-white shadow-xl drop-shadow-lg flex items-center justify-center'>
+                            <svg className='' width="14" height="14" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.2 0L6.5 0.7L9.1 3.5H0V4.5H9.2L6.5 7.3L7.2 8L11 4L7.2 0Z" fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
                 <Swiper
-                    className='relative '
+                    className=''
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     slidesPerView={6.5}
                     spaceBetween={32}
-                    loop={true}
                     breakpoints={breakPoints}
                     navigation={{
                         prevEl: '.prev',
                         nextEl: '.next',
                     }}
                 >
-                    <div className='absolute top-0 bottom-0 left-0'>
-                        <div className='flex w-full h-full justify-center items-center relative z-10'>
-                            <button ref={navigationPrevRef} role={"button"} className='prev appearance-none focus:outline-none h-12 w-12 bg-white shadow-xl drop-shadow-lg flex items-center justify-center mx-2'>
-                                <svg className='' width="14" height="14" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3.8 0L4.5 0.7L1.9 3.5H11V4.5H1.8L4.5 7.3L3.8 8L0 4L3.8 0Z" fill="black" />
-                                </svg>
 
-                            </button>
-                        </div>
+                    <div className='mx-4'>
+                        {items.map((item, id) => {
+                            return (
+                                <SwiperSlide key={id}>
+                                    <div key={id} className='flex flex-col justify-center space-y-4 cursor-grab'>
+                                        <img className='object-cover h-[197px]' alt='company logo' src={item.icon} />
+                                        <p className='f-i-p text-xl leading-4 font-bold'>
+                                            {item.name}
+                                        </p>
+                                        <p className='text-xs leading-4 text-[#878C92] f-i-p'>{item.designation}</p>
+                                        <p className='f-f-v text-base text-[#1B1B1B] font-normal w-[70%]'>
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+                            )
+                        })}
                     </div>
-                    <div className='absolute top-0 bottom-0 right-0'>
-                        <div className='flex w-full h-full justify-center items-center relative z-10'>
-                            <button ref={navigationNextRef} role={"button"} className='next appearance-none focus:outline-none h-12 w-12 bg-white shadow-xl drop-shadow-lg flex items-center justify-center mx-2'>
-                                <svg className='' width="14" height="14" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.2 0L6.5 0.7L9.1 3.5H0V4.5H9.2L6.5 7.3L7.2 8L11 4L7.2 0Z" fill="black" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    {items.map((item, id) => {
-                        return (
-                            <SwiperSlide key={id}>
-                                <div key={id} className='flex flex-col items-center cursor-grab'>
-                                    <img className='object-cover  h-[197px]' alt='company logo' src={item.icon} />
-                                    <p className='text-center f-f-v text-[13px] leading-4'>
-                                        {item.text}
-                                    </p>
-                                </div>
-                            </SwiperSlide>
-                        )
-                    })}
                 </Swiper>
             </div>
             <style>
