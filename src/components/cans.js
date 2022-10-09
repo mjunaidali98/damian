@@ -70,7 +70,7 @@ const Cans = () => {
                             <div className="w-7/12">
                                 <img className=" object-cover" src="./assets/h2.png" />
                             </div>
-                            <div className="w-3/12 flex flex-col space-y-4">
+                            <div className="w-3/12 flex flex-col space-y-4 mt-5">
                                 <p className="f-i-p text-base text-[#767C82] font-semibold">OUR CANS ARE</p>
                                 <h1 className="text-[40px] leading-10 font-bold f-f-p">
                                     Strength in <br />

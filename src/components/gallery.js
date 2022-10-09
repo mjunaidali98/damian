@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-const Gallery = () => {
+const Gallery = ({ setImage }) => {
     const images = [
         "../assets/g1.png",
         "../assets/g2.png",
@@ -80,7 +80,7 @@ const Gallery = () => {
                     {images.map((item, idx) => {
                         return (
                             <SwiperSlide >
-                                <img className='w-full h-full object-cover px-2' src={item} alt={`Image ${idx}`} />
+                                <img role={"button"} onClick={() => setImage(item)} className='w-full h-full object-cover px-2' src={item} alt={`Image ${idx}`} />
                             </SwiperSlide>
                         )
                     })}
