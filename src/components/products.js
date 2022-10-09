@@ -39,7 +39,7 @@ const Products = () => {
                             </div>
                             <div className='absolute bottom-[30px] left-0 right-0 w-full z-10 '>
                                 <div className='flex w-full items-center justify-center'>
-                                    <a id='button' className=" relative px-4 py-2 rounded-lg font-lg font-bold text-center w-[220px] text-black border-2 border-white " href="https://slatemilk.com/products/chocolate-milk-trellis?variant=39320513970270" >
+                                    <a id='button' className="text-white relative px-4 py-2 rounded-lg font-lg font-bold text-center w-[220px] border-2 border-white " href="https://slatemilk.com/products/chocolate-milk-trellis?variant=39320513970270" >
                                         SHOP NOW
                                     </a>
                                 </div>
