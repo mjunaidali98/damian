@@ -10,10 +10,10 @@ const Notification = () => {
                         {[...new Array(3)].map((item, idx) => {
                             return (
                                 <React.Fragment>
-                                    <p key={idx} className="px-4">
+                                    <p key={idx} className="p-2">
                                         Save up to 15% with <span role={"button"} className="underline">Subscribe &amp; Save</span>
                                     </p>
-                                    <p key={idx} className="px-4">
+                                    <p key={idx} className="p-2">
                                         Free Shipping on Order $50+
                                     </p>
                                 </React.Fragment>

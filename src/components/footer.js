@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ removeFollow = false }) => {
 
   return (
     <React.Fragment>
-      <p className='text-base f-f-p font-bold w-full text-end px-11'>Follow Us @Slatemilk</p>
+      {removeFollow ? null : <p className='text-base f-f-p font-bold w-full text-end px-11'>Follow Us @Slatemilk</p>}
       <div className='bg-[#262322] py-10 cut'>
         <div className='container mx-auto flex flex-col justify-center text-white f-f-p w-[902px]'>
           <div className='flex w-full justify-between items-start pt-24 pb-10'>

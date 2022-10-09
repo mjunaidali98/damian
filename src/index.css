@@ -52,6 +52,12 @@ code {
   border-color: #ECF5F9 transparent #ECF5F9 transparent;
 }
 
+.bottom-white {
+  height: 0;
+  border-width: 0 100vW 7vW 0;
+  border-style: solid;
+  border-color: #FFF transparent #FFF transparent;
+}
 
 .blue-bg {
   background: linear-gradient(180deg, #ECF5F9 36.36%, #ECF5F9 100%);
