@@ -13,7 +13,7 @@ const Menu = () => {
             <div className={`w-full fixed hidden md:block font-medium text-[15px] leading-10 h-16 transition-all ease-in-out duration-300 ${shadow ? "-mt-8 bg-white pb-2 drop-shadow-xl shadow-lg " : ""}`}>
                 <div className='container px-4 lg:px-16 mx-auto w-full flex justify-between h-full'>
                     <div className="flex justify-center items-center space-x-5">
-                        <a role={"button"} href="/">Shop</a>
+                        <a role={"button"} href="/shop">Shop</a>
                         <a role={"button"} href="/">Subscribe &amp; Save</a>
                     </div>
                     <img role={"img"} className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
@@ -49,7 +49,7 @@ const Menu = () => {
                             <rect y="7" width="24" height="3" fill="black"></rect>
                             <rect y="14" width="24" height="3" fill="black"></rect>
                         </svg>
-                        <a role={"button"} href="/">Shop</a>
+                        <a role={"button"} href="/shop">Shop</a>
                     </div>
                     <img role={"img"} className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
                     <div className="flex justify-center items-center space-x-4">

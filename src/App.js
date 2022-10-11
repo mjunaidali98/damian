@@ -16,6 +16,7 @@ function App() {
 
     // return 
   }, [])
+  console.log("builderContentJson",builderContentJson)
   return (
     <div className="bg-[#F6F6F6] ">
       <Router>
@@ -23,7 +24,7 @@ function App() {
           <Route path="/home" element={<Home />} exact />
           <Route path="/" element={<Home />} exact />
           <Route path="/about" element={<About />} exact />
-          {/* <Route path="/shop" element={<BuilderComponent model="page" content={builderContentJson} />} exact /> */}
+          <Route path="/shop" element={<BuilderComponent model="page" content={builderContentJson} />} exact />
 
         </Routes>
       </Router>
