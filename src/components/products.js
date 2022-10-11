@@ -32,7 +32,7 @@ const Products = () => {
                             <div className='w-full h-full flex-1'>
                                 <div style={{ backgroundColor: item.color }} className={`pb-[138%] relative overflow-hidden cursor-pointer z-10`}>
                                     <div className='absolute inset-0 w-full h-full' >
-                                        <img className='absolute -top-[8%] left-4 scale-[2] z-0 group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 object-cover object-center' src={item.bg_image} />
+                                        <img alt=""  className='absolute -top-[8%] left-4 scale-[2] z-0 group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 object-cover object-center' src={item.bg_image} />
                                         <img className='absolute z-10 group-hover:z-0 opacity-100 group-hover:opacity-0 transition-all ease-in-out duration-300 object-cover w-full' src={item.front_image} alt="Slate Milk presentation" />
                                     </div>
                                 </div>
