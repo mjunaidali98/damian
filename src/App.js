@@ -16,7 +16,6 @@ function App() {
 
     // return 
   }, [])
-  console.log("builderContentJson",builderContentJson)
   return (
     <div className="bg-[#F6F6F6] ">
       <Router>
