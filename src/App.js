@@ -3,7 +3,7 @@ import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/about";
 import { BuilderComponent, builder } from '@builder.io/react';
-builder.init('9f450fb622bf4a49b9286042970bcf4a')
+builder.init('7841c4d338cc4c67bf2102183b1443ab')
 
 function App() {
   const [builderContentJson, setBuilderContentJson] = useState(null)
