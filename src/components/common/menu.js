@@ -16,7 +16,7 @@ const Menu = () => {
                         <a role={"button"} href="/shop">Shop</a>
                         <a role={"button"} href="/">Subscribe &amp; Save</a>
                     </div>
-                    <img role={"img"} className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
+                    <img className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
                     <div className="flex justify-center items-center space-x-10">
                         <div className="flex justify-center items-center space-x-3">
                             <a role={"button"} href="/about">About</a>
@@ -51,7 +51,7 @@ const Menu = () => {
                         </svg>
                         <a role={"button"} href="/shop">Shop</a>
                     </div>
-                    <img role={"img"} className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
+                    <img className="h-14 w-16" alt="logo" src="./assets/logo2x.png" />
                     <div className="flex justify-center items-center space-x-4">
                         <a role={"button"} href="/">
                             <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">

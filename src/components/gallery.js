@@ -80,7 +80,7 @@ const Gallery = ({ setImage }) => {
                     {images.map((item, idx) => {
                         return (
                             <SwiperSlide key={idx} >
-                                <img  role={"button"} onClick={() => setImage(item)} className='w-full h-full object-cover px-2' src={item} alt={`Image ${idx}`} />
+                                <img  role={"button"} onClick={() => setImage(item)} className='w-full h-full object-cover px-2' src={item} alt={`img_${idx}`} />
                             </SwiperSlide>
                         )
                     })}

@@ -68,7 +68,7 @@ const Cans = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 w-full">
                             <div className="w-full lg:w-7/12">
-                                <img className=" object-cover" src="./assets/h2.png" />
+                                <img alt=""  className=" object-cover" src="./assets/h2.png" />
                             </div>
                             <div className="w-full sm:w-[372px] flex flex-col space-y-4 mt-5 ">
                                 <p className="f-i-p text-base text-[#767C82] font-semibold">OUR CANS ARE</p>

@@ -22,8 +22,8 @@ const Blogs = () => {
                             </p>
                         </div>
                     </div>
-                    <img className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/better-for-you-2_2400x.jpg?v=1620947254' />
-                    <img className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-better-for-you-2_1600x.jpg?v=1620959206' />
+                    <img alt="" className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/better-for-you-2_2400x.jpg?v=1620947254' />
+                    <img alt="" className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-better-for-you-2_1600x.jpg?v=1620959206' />
 
                 </div>
                 <div className='relative w-full row-span-2' >
@@ -45,7 +45,7 @@ const Blogs = () => {
                             </p>
                         </div>
                     </div>
-                    <img className='w-full h-full object-cover' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-choco-pour-v003_1600x.jpg?v=1637181232' />
+                    <img alt=""  className='w-full h-full object-cover' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-choco-pour-v003_1600x.jpg?v=1637181232' />
                 </div>
                 <div className='relative w-full h-full' >
                     <div className='absolute inset-0 w-full lg:w-[286px] h-full text-black'>
@@ -71,8 +71,8 @@ const Blogs = () => {
                             </p>
                         </div>
                     </div>
-                    <img className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-2_2400x.jpg?v=1620948277' />
-                    <img className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-4-mobile_1600x.jpg?v=1620948442' />
+                    <img alt=""  className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-2_2400x.jpg?v=1620948277' />
+                    <img alt=""  className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-4-mobile_1600x.jpg?v=1620948442' />
                    
                 </div>
             </div>

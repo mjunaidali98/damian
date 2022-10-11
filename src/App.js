@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/about";
-import { BuilderComponent, BuilderContent, builder } from '@builder.io/react';
+import { BuilderComponent, builder } from '@builder.io/react';
 builder.init('9f450fb622bf4a49b9286042970bcf4a')
 
 function App() {

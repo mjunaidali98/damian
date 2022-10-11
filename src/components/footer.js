@@ -50,7 +50,6 @@ const Footer = ({ removeFollow = false }) => {
                   placeholder={"Your Email"}
                   className="flex-nowrap text-sm my-5 f-f-p appearance-none outline-none text-black placeholder:text-[#878C92] px-4 py-2 w-full md:w-[250px] xl:w-[392px]" />
                 <button
-                  role="button"
                   type="submit"
                   className='focus:outline-none appearance-none bg-transparent text-base leading-4 font-bold flex flex-shrink-0'>
                   Sign Up
