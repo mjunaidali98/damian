@@ -34,9 +34,9 @@ const Cans = () => {
             <div className=" blue-bg relative z-10">
                 <div className="flex items-center justify-center flex-wrap lg:flex-nowrap px-5 lg:px-10 pt-20 pb-10">
                     {
-                        items.map((item) => {
+                        items.map((item,idx) => {
                             return (
-                                <div className="flex flex-col space-y-5 items-center justify-center w-[210px] h-auto">
+                                <div key={idx} className="flex flex-col space-y-5 items-center justify-center w-[210px] h-auto">
                                     <video
                                         className='bg-index'
                                         playsInline
@@ -56,27 +56,27 @@ const Cans = () => {
                 </div>
             </div>
             <div className="relative light-blue-bg py-20 z-10 px-5 lg:px-10 ">
-                <div class="main-wrapper ">
+                <div className="main-wrapper ">
                     <div className="degrade">
                         <div className="diagonal-wrapper ">
-                            <div class="top1"></div>
-                            <div class="bottom"></div>
+                            <div className="top1"></div>
+                            <div className="bottom"></div>
                         </div>
                     </div>
                 </div>
                 <div className="relative z-20">
                     <div className="container mx-auto">
-                        <div className="flex items-center space-x-10 w-full">
-                            <div className="w-7/12">
+                        <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-10 w-full">
+                            <div className="w-full lg:w-7/12">
                                 <img className=" object-cover" src="./assets/h2.png" />
                             </div>
-                            <div className="w-3/12 flex flex-col space-y-4 mt-5">
+                            <div className="w-full sm:w-[372px] flex flex-col space-y-4 mt-5 ">
                                 <p className="f-i-p text-base text-[#767C82] font-semibold">OUR CANS ARE</p>
                                 <h1 className="text-[40px] leading-10 font-bold f-f-p">
                                     Strength in <br />
                                     Every Can.
                                 </h1>
-                                <p className="text-[12px] leading-[15px] text-black f-f-p">
+                                <p className="text-sm text-black f-f-p">
                                 Who said healthy meant sacrificing taste? Our milks and lattes have 20g protein and 0g added sugar, all while being unbelievably delicious.                                </p>
                             </div>
                         </div>

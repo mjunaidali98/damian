@@ -18,9 +18,9 @@ const AboutHero = () => {
                     </div>
                 </div>
             </div>
-            <div class="section">
-                <div class="top"></div>
-                <div class="bottom-white"></div>
+            <div className="section">
+                <div className="top"></div>
+                <div className="bottom-white"></div>
             </div>
         </div>
     )

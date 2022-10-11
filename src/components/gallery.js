@@ -22,19 +22,19 @@ const Gallery = ({ setImage }) => {
             spaceBetween: 20
         },
         320: {
-            slidesPerView: 2.2,
+            slidesPerView: 1,
             spaceBetween: 20
         },
         380: {
-            slidesPerView: 2.8,
+            slidesPerView: 1,
             spaceBetween: 20
         },
         480: {
-            slidesPerView: 3.5,
+            slidesPerView: 2,
             spaceBetween: 30
         },
         640: {
-            slidesPerView: 4.2,
+            slidesPerView: 3.2,
             spaceBetween: 32
         },
         768: {
@@ -68,7 +68,7 @@ const Gallery = ({ setImage }) => {
                 className=''
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                slidesPerView={2.5}
+                slidesPerView={1}
                 spaceBetween={32}
                 breakpoints={breakPoints}
                 navigation={{
@@ -79,8 +79,8 @@ const Gallery = ({ setImage }) => {
                 <div className='flex items-center justify-center'>
                     {images.map((item, idx) => {
                         return (
-                            <SwiperSlide >
-                                <img role={"button"} onClick={() => setImage(item)} className='w-full h-full object-cover px-2' src={item} alt={`Image ${idx}`} />
+                            <SwiperSlide key={idx} >
+                                <img  role={"button"} onClick={() => setImage(item)} className='w-full h-full object-cover px-2' src={item} alt={`Image ${idx}`} />
                             </SwiperSlide>
                         )
                     })}

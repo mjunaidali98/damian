@@ -3,9 +3,9 @@ import React from 'react'
 const Blogs = () => {
     return (
         <div className='bg-white'>
-            <div className='container mx-auto grid grid-cols-2 py-10 gap-10'>
-                <div className='relative w-full h-auto' >
-                    <div className='absolute inset-0 w-[286px] h-full text-white'>
+            <div className='container mx-auto grid grid-cols-1 lg:grid-cols-2 py-10 gap-10'>
+                <div className='relative w-full h-full' >
+                    <div className='absolute inset-0 w-full lg:w-[286px] h-full text-white'>
                         <div className='flex flex-col space-y-5 w-full h-full p-6'>
                             <p className='text-xs text-[#A9ADB1] f-i-p font-semibold'>
                                 01
@@ -22,11 +22,12 @@ const Blogs = () => {
                             </p>
                         </div>
                     </div>
-                    <img className='w-full h-full object-cover' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/better-for-you-2_2400x.jpg?v=1620947254' />
+                    <img className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/better-for-you-2_2400x.jpg?v=1620947254' />
+                    <img className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-better-for-you-2_1600x.jpg?v=1620959206' />
 
                 </div>
                 <div className='relative w-full row-span-2' >
-                    <div className='absolute inset-0 w-[286px] h-full text-black'>
+                    <div className='absolute inset-0 w-full lg:w-[286px] h-full text-black'>
                         <div className='flex flex-col space-y-5 w-full h-full p-6'>
                             <p className='text-xs text-[#767C82] f-i-p font-semibold'>
                                 02
@@ -46,8 +47,8 @@ const Blogs = () => {
                     </div>
                     <img className='w-full h-full object-cover' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/mobile-choco-pour-v003_1600x.jpg?v=1637181232' />
                 </div>
-                <div className='relative w-full h-auto' >
-                    <div className='absolute inset-0 w-[286px] h-full text-black'>
+                <div className='relative w-full h-full' >
+                    <div className='absolute inset-0 w-full lg:w-[286px] h-full text-black'>
                         <div className='flex flex-col space-y-5 w-full h-full p-6'>
                             <p className='text-xs text-[#767C82] f-i-p font-semibold'>
                                 03
@@ -70,7 +71,9 @@ const Blogs = () => {
                             </p>
                         </div>
                     </div>
-                    <img className='w-full h-full object-cover' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-2_2400x.jpg?v=1620948277' />
+                    <img className='w-full h-full object-cover lg:block hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-2_2400x.jpg?v=1620948277' />
+                    <img className='w-full h-full object-cover block lg:hidden' src='https://cdn.shopify.com/s/files/1/0075/5951/2137/files/world-4-mobile_1600x.jpg?v=1620948442' />
+                   
                 </div>
             </div>
         </div>

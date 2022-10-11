@@ -25,10 +25,10 @@ const Products = () => {
     ]
     return (
         <div className="bg-white">
-            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-11'>
-                {items.map((item) => {
+            <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-11'>
+                {items.map((item, idx) => {
                     return (
-                        <div className='relative w-full h-full group'>
+                        <div key={idx} className='relative w-full h-full group'>
                             <div className='w-full h-full flex-1'>
                                 <div style={{ backgroundColor: item.color }} className={`pb-[138%] relative overflow-hidden cursor-pointer z-10`}>
                                     <div className='absolute inset-0 w-full h-full' >

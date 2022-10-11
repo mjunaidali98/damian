@@ -9,11 +9,11 @@ const Notification = () => {
                     <div className="text-[15px] leading-[14px] text-white font-bold flex items-center justify-center h-full">
                         {[...new Array(3)].map((item, idx) => {
                             return (
-                                <React.Fragment>
+                                <React.Fragment key={idx}>
                                     <p key={idx} className="p-2">
                                         Save up to 15% with <span role={"button"} className="underline">Subscribe &amp; Save</span>
                                     </p>
-                                    <p key={idx} className="p-2">
+                                    <p key={`key_${idx}`} className="p-2">
                                         Free Shipping on Order $50+
                                     </p>
                                 </React.Fragment>

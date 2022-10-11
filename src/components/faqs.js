@@ -54,12 +54,13 @@ const Faqs = () => {
                                 id="faq"
                                 className="text-black f-f-p text-xl leading-10 font-black  my-10"
                             >
-                               FAQs
+                                FAQs
                             </p>
                             <div className=" w-full f-f-p">
                                 {faq.map((item, i) => {
                                     return (
                                         <div
+                                            key={i}
                                             id={`${i}ch`}
                                             onClick={() => {
                                                 ans === i ? setAns(null) : setAns(i);
@@ -86,7 +87,7 @@ const Faqs = () => {
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }

@@ -99,7 +99,7 @@ const Testimonials = () => {
     return (
         <div className='py-16 bg-white'>
             <p className="f-i-p text-base text-[#767C82] font-semibold uppercase text-center py-10">Testimonials</p>
-            <div className='py-10 px-10 relative'>
+            <div className='py-10 md:px-10 relative'>
                 <div className='absolute top-0 bottom-0 left-0'>
                     <div className='flex w-full h-full justify-center items-center relative z-10'>
                         <button ref={navigationPrevRef} role={"button"} className='prev appearance-none focus:outline-none h-10 w-10 bg-white shadow-xl drop-shadow-lg flex items-center justify-center'>

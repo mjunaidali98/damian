@@ -90,7 +90,7 @@ const Companies = () => {
                     className='relative flex w-full items-center justify-center'
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                    slidesPerView={6.5}
+                    slidesPerView={5}
                     loop={true}
                     spaceBetween={32}
                     breakpoints={breakPoints}

@@ -21,12 +21,12 @@ const AnimatedHeading = () => {
 
     return (
         <div className='w-full py-11 bg-white'>
-            <h1 className='text-black w-full text-[40px] font-extrabold f-f-p text-center'>
+            <h1 className='text-black w-full text-[40px] flex flex-col items-center justify-center space-x-4 md:flex-row font-extrabold f-f-p text-center'>
                 <span>For Your </span>
-                <span className='w-[387px] inline-block relative text-[#767C82] align-top text-left overflow-hidden'>
+                <span className='w-full justify-center sm:w-[387px] inline-block relative text-[#767C82] align-top md:text-left overflow-hidden'>
                     {text_array.map((text, idx) => {
                         return (
-                            <b className={`${idx !== index ? "-z-10 fixed " : " slideOutDown relative z-10"}  whitespace-nowrap`}>{text}</b>
+                            <b key={idx} className={`${idx !== index ? "-z-10 fixed " : " slideOutDown relative z-10"}  whitespace-nowrap`}>{text}</b>
                         )
                     })}
                     <b></b>

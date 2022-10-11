@@ -20,7 +20,7 @@ const Press = () => {
             spaceBetween: 20
         },
         380: {
-            slidesPerView: 1.3,
+            slidesPerView: 1,
             spaceBetween: 20
         },
         480: {
