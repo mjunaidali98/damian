@@ -24,7 +24,7 @@ export default function CatchAllRoute() {
       setNotFound(!content);
     }
     fetchContent();
-  }, [window.location.pathname]);
+  }, []);
 
   // if no page is found, return a 404 page
   if (notFound && !isPreviewingInBuilder) {
