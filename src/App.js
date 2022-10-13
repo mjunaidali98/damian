@@ -6,9 +6,6 @@ import About from "./pages/about";
 // Put your API key here
 builder.init("19a078a546e8451b8f93e16018bc04da");
 
-// set whether you're using the Visual Editor,
-// whether there are changes,
-// and render the content if found
 export default function CatchAllRoute() {
   const isPreviewingInBuilder = useIsPreviewing();
   const [notFound, setNotFound] = useState(false);
@@ -34,7 +31,6 @@ export default function CatchAllRoute() {
     return <div>Sorry! Page not found</div>
   }
 
-  // return the page when found
   return (
     <>
       <head>
